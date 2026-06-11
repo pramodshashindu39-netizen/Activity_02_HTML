@@ -44,9 +44,36 @@
         <dd> World-famous high-quality tea produced in the hill country.</dd><br>
         
         <hr>
-        
 
-        <h2>
+
+        <h2>More Information</h2>
+        <p> Click the link below to visit the official tourism website:</p> 
+            
+            <a href="https://www.srilanka.travel/">Sri Lanka Tourism</a>
+        <hr>
+
+        <h2>Plan Your Trip</h2>
+
+       <form action="submit_trip_plan" method="post">
+            
+         <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination">
+                <option value="sigiriya">Sigiriya Rock Fortress</option>
+                <option value="ella">Ella (Nine Arch Bridge)</option>
+                <option value="yala">Yala National Park</option>
+            </select><br><br>
+
+        <label for="travel_date">Number Of Days :</label> 
+        <input type="number" id="travel_date" name="travel_date" min="1" max="30"><br>
+        <br>
+
+        <label for="activities">Do You Need a Tour Guide?</label>
+        <input type="checkbox" id="activities" name="activities" value="tour_guide"> Yes, I Need One
+        <br><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+
 
 </body>
 </html>
